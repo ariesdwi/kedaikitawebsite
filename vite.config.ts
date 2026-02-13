@@ -8,4 +8,5 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  envPrefix: 'NEXT_PUBLIC_',
 })

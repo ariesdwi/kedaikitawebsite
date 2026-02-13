@@ -6,16 +6,14 @@ interface SearchBarProps {
 
 const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
   return (
-    <div className="relative max-w-2xl mx-auto px-6 mb-16">
-      <div className="bg-white border border-gray-100 p-2 rounded-full flex items-center gap-4 group transition-all duration-300 shadow-sm hover:shadow-xl focus-within:ring-4 focus-within:ring-primary/5 focus-within:border-primary">
-        <div className="pl-6 text-primary transition-colors">
-          <Search size={22} className="stroke-[3]" />
-        </div>
+    <div className="relative max-w-xl mx-auto px-4 mb-12">
+      <div className="bg-white border-2 border-gray-100 rounded-2xl flex items-center px-6 py-1 shadow-sm">
+        <Search size={20} className="text-gray-400 mr-4" />
         <input 
           type="text"
-          placeholder="Cari menu favorit Anda..."
+          placeholder="Mau makan apa hari ini?"
           onChange={(e) => onSearch(e.target.value)}
-          className="bg-transparent border-none focus:ring-0 text-gray-900 placeholder:text-gray-400 w-full pr-8 py-4 text-base font-bold"
+          className="bg-transparent border-none focus:ring-0 text-gray-900 placeholder:text-gray-400 w-full py-4 text-base font-medium"
         />
       </div>
     </div>
