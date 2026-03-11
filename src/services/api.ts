@@ -1,6 +1,6 @@
 import { Business, Category, Product, ApiResponse } from '../types';
 
-const API_URL = import.meta.env.NEXT_PUBLIC_API_URL || 'http://localhost:3000';
+const API_URL = import.meta.env.NEXT_PUBLIC_API_URL || 'https://posbackend-18c9.vercel.app';
 const BASE_URL = `${API_URL}/public/menu`;
 const BUSINESS_ID = 'cmkc7lejr00004yktqn5kj064';
 
